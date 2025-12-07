@@ -111,9 +111,7 @@ with tab3:
         # Display the plot
         st.pyplot(fig)
         
-        # Show pass data
-        st.subheader("Pass Data")
-        st.dataframe(kroos_passes[['minute', 'second', 'location', 'end_location', 'pass_outcome_name']].head(20))
+    
         
     except Exception as e:
         st.error(f"Error loading event data: {e}")
@@ -226,4 +224,5 @@ with st.sidebar:
     st.write("Current analysis uses match ID: 3930158")
     
     st.header("Player")
+
     st.write("Focus player: Toni Kroos")
